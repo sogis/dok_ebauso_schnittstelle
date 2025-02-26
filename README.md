@@ -23,7 +23,7 @@ Datenmodell:
 
 ## Schnittstelle
 
-Es stehen ingesamt fünf Dataservice-Layer zur Verfügung. Der gleiche [Dataservice](https://geo-i.so.ch/api/data/v1/api/) (mit anderen Layern) wird bereits für SOBAU verwendet.
+Es stehen ingesamt fünf Dataservice-Layer zur Verfügung. Der gleiche [Dataservice](https://geo.so.ch/api/data/v1/api/) (mit anderen Layern) wird bereits für SOBAU verwendet.
 
 ### Grundstücke
 
@@ -35,7 +35,7 @@ Es wird innerhalb des Kantonsgebietes mindestens ein Objekt (`art=Liegenschaft`)
 
 Beispiel:
 
-https://geo-i.so.ch/api/data/v1/ch.so.dsbjd.ebauso_lokalisation_grundstueck.data/?&bbox=2610550,1229460,2610550,1229460
+https://geo.so.ch/api/data/v1/ch.so.dsbjd.ebauso_lokalisation_grundstueck.data/?&bbox=2610550,1229460,2610550,1229460
 
 ### Gebäudeeingang
 
@@ -45,7 +45,7 @@ Es werden die Gebäudeingänge zurückgeliefert. Der Request muss in der Regel g
 
 Beispiel:
 
-https://geo-i.so.ch/api/data/v1/ch.so.dsbjd.ebauso_lokalisation_gebaeudeeingang.data/?&bbox=2610530,1229440,2610570,1229480
+https://geo.so.ch/api/data/v1/ch.so.dsbjd.ebauso_lokalisation_gebaeudeeingang.data/?&bbox=2610530,1229440,2610570,1229480
 
 ### Fachthemen
 
@@ -57,13 +57,13 @@ Es ist Sache der Anwendung (eBauSO) zu entscheiden wann und wie der Request zum 
 
 #### Beispiel: Drei Themen an einem Punkt
 
-https://geo-i.so.ch/api/data/v1/ch.so.dsbjd.ebauso_fachthemen_flaechen.data/?&bbox=2610550,1229460,2610550,1229460
+https://geo.so.ch/api/data/v1/ch.so.dsbjd.ebauso_fachthemen_flaechen.data/?&bbox=2610550,1229460,2610550,1229460
 
 An diesem Punkt sind drei Themen betroffen: `ch.Grundwasserschutzzonen`, `ch.BelasteteStandorte` und `ch.SO.NutzungsplanungGrundnutzung`
 
 #### Beispiel: Wald- und Gewässernähe
 
-https://geo-i.so.ch/api/data/v1/ch.so.dsbjd.ebauso_fachthemen_flaechen.data/?&bbox=2610460,1227980,2610500,1228020&filter=[[%22thema%22,%22=%22,%22ch.SO.Bodenbedeckung%22]]
+https://geo.so.ch/api/data/v1/ch.so.dsbjd.ebauso_fachthemen_flaechen.data/?&bbox=2610460,1227980,2610500,1228020&filter=[[%22thema%22,%22=%22,%22ch.SO.Bodenbedeckung%22]]
 
 Für die Prüfung, ob das Baugesuch in Wald- oder Gewässernähe liegt, wird ein BBOX-Request (mit einer Buffergrösse) und einem Thema-Filter benötigt.
 
@@ -71,9 +71,9 @@ Für die Prüfung, ob das Baugesuch in Wald- oder Gewässernähe liegt, wird ein
 
 Analog zum Flächenlayer gibt es auch je einen Layer mit Linien- und Punktgeometrien. Dies sind wohl in der Regel immer mit einem BBOX-Filter mit einer Ausdehnung auszuführen.
 
-https://geo-i.so.ch/api/data/v1/ch.so.dsbjd.ebauso_fachthemen_linien.data/?&bbox=2605130,1228960,2605170,1229000
+https://geo.so.ch/api/data/v1/ch.so.dsbjd.ebauso_fachthemen_linien.data/?&bbox=2605130,1228960,2605170,1229000
 
-https://geo-i.so.ch/api/data/v1/ch.so.dsbjd.ebauso_fachthemen_punkte.data/?&bbox=2607600,1228600,2607680,1228640
+https://geo.so.ch/api/data/v1/ch.so.dsbjd.ebauso_fachthemen_punkte.data/?&bbox=2607600,1228600,2607680,1228640
 
 ## Dateninhalt
 
