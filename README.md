@@ -92,9 +92,9 @@ Es sind folgende Themen vorhanden:
 | ch.SO.NutzungsplanungErschliessung | arp_nutzungsplanung_pub_v1.nutzungsplanung_erschliessung_linienobjekt, arp_nutzungsplanung_pub_v1.nutzungsplanung_erschliessung_punktobjekt, arp_nutzungsplanung_pub_v1.nutzungsplanung_erschliessung_flaechenobjekt | Fläche, Linie, Punkt |
 | ch.SO.NutzungsplanungGrundnutzung | arp_nutzungsplanung_pub_v1.nutzungsplanung_grundnutzung | Fläche |
 | ch.SO.NutzungsplanungUeberlagernd | arp_nutzungsplanung_pub_v1.nutzungsplanung_ueberlagernd_flaeche, arp_nutzungsplanung_pub_v1.nutzungsplanung_ueberlagernd_linie, arp_nutzungsplanung_pub_v1.nutzungsplanung_ueberlagernd_punkt | Fläche, Linie, Punkt |
-| ch.SO.RichtplanJuraschutzzone | arp_richtplan_pub_v2.richtplankarte_ueberlagernde_flaeche | Fläche |
+| ~~ch.SO.RichtplanJuraschutzzone~~ | arp_richtplan_pub_v2.richtplankarte_ueberlagernde_flaeche | Fläche |
 
-Im Thema `ch.SO.Bodenbedeckung` ist nur Wald und Gewässer vorhanden. Für die Juraschutzzone werden nur Objekte `objekttyp = 'Juraschutzzone'` verwendet.
+Im Thema `ch.SO.Bodenbedeckung` ist nur Wald und Gewässer vorhanden. ~~Für die Juraschutzzone werden nur Objekte `objekttyp = 'Juraschutzzone'` verwendet.~~
 
 Für die Daten, die aus dem ÖREB-Kataster verwendet werden, weist das Attribut `Rechtsstatus` einen Wert aus (`inKraft`, `AenderungOhneVorwirkung`, `AenderungMitVorwirkung`). Darauf ist bei der Weiterverarbeitung / beim Entscheidungsprozess in eBauSO zwingend Rücksicht zu nehmen. Falls gewünscht, kann auf das Attribut verzichtet werden. In diesem Fall filtern wir alle Objekte ungleich `inKraft` bereits in der Datenbank.
 
