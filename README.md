@@ -96,6 +96,6 @@ Es sind folgende Themen vorhanden:
 
 Im Thema `ch.SO.Bodenbedeckung` ist nur Wald und Gewässer vorhanden. ~~Für die Juraschutzzone werden nur Objekte `objekttyp = 'Juraschutzzone'` verwendet.~~
 
-Für die Daten, die aus dem ÖREB-Kataster verwendet werden, weist das Attribut `Rechtsstatus` einen Wert aus (`inKraft`, `AenderungOhneVorwirkung`, `AenderungMitVorwirkung`). Darauf ist bei der Weiterverarbeitung / beim Entscheidungsprozess in eBauSO zwingend Rücksicht zu nehmen. Falls gewünscht, kann auf das Attribut verzichtet werden. In diesem Fall filtern wir alle Objekte ungleich `inKraft` bereits in der Datenbank.
+~~Für die Daten, die aus dem ÖREB-Kataster verwendet werden, weist das Attribut `Rechtsstatus` einen Wert aus (`inKraft`, `AenderungOhneVorwirkung`, `AenderungMitVorwirkung`). Darauf ist bei der Weiterverarbeitung / beim Entscheidungsprozess in eBauSO zwingend Rücksicht zu nehmen. Falls gewünscht, kann auf das Attribut verzichtet werden. In diesem Fall filtern wir alle Objekte ungleich `inKraft` bereits in der Datenbank.~~ Nach Rücksprache mit adfinis werden nur die Objekte mit `Rechtstatus = 'inKraft'` in das Rahmenmodell transferiert.
 
 
